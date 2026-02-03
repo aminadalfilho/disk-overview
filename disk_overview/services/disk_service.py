@@ -18,6 +18,9 @@ LOCAL_FSTYPES = {
 
 NETWORK_FSTYPES = {"cifs", "nfs", "nfs4", "sshfs"}
 
+# Mountpoints de sistema a serem ignorados
+EXCLUDED_MOUNTPOINTS = {"/boot", "/boot/efi", "/efi"}
+
 
 class DiskService:
     def __init__(self):
@@ -73,6 +76,8 @@ class DiskService:
             if partition.fstype not in LOCAL_FSTYPES:
                 continue
             if partition.mountpoint in network_mountpoints:
+                continue
+            if partition.mountpoint in EXCLUDED_MOUNTPOINTS:
                 continue
             if not os.path.exists(partition.mountpoint):
                 continue

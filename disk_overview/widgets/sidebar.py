@@ -21,7 +21,7 @@ class Sidebar(Gtk.Box):
         self.set_margin_start(10)
         self.set_margin_end(10)
 
-        quick_label = Gtk.Label(label="ACESSO RAPIDO", xalign=0)
+        quick_label = Gtk.Label(label="ACESSO RÁPIDO", xalign=0)
         quick_label.get_style_context().add_class("sidebar-section")
         self.pack_start(quick_label, False, False, 0)
 
