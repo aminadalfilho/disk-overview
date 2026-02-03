@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=disk-overview
+export DH_VERBOSE=1
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_install:
+	dh_auto_install
+	# Instala arquivos adicionais
+	install -D -m 644 data/disk-overview.desktop debian/disk-overview/usr/share/applications/disk-overview.desktop
+	install -D -m 644 config/default_config.json debian/disk-overview/usr/share/disk-overview/config/default_config.json
+	install -D -m 644 data/styles.css debian/disk-overview/usr/share/disk-overview/data/styles.css
+	install -D -m 644 data/icons/hdd.png debian/disk-overview/usr/share/disk-overview/data/icons/hdd.png

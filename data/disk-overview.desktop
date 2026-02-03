@@ -1,10 +1,14 @@
 [Desktop Entry]
 Name=Disk Overview
-Comment=Visualizacao de dispositivos de armazenamento
-Exec=python3 -m disk_overview.main
+Name[pt_BR]=Visao de Discos
+Comment=Storage device visualization and management
+Comment[pt_BR]=Visualizacao e gerenciamento de dispositivos de armazenamento
+Exec=disk-overview
 Icon=drive-harddisk
 Terminal=false
 Type=Application
 Categories=Utility;System;FileManager;
-Keywords=disk;storage;files;explorer;
+Keywords=disk;storage;files;explorer;hdd;ssd;
+Keywords[pt_BR]=disco;armazenamento;arquivos;explorador;hdd;ssd;
 StartupNotify=true
+X-GNOME-UsesNotifications=true

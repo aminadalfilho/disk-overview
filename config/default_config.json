@@ -18,5 +18,13 @@
     "bar_color_normal": "#3584e4",
     "bar_color_warning": "#ff7800",
     "bar_color_critical": "#e01b24"
+  },
+  "notifications": {
+    "enabled": true,
+    "warning_threshold": 70,
+    "critical_threshold": 90,
+    "cooldown_seconds": 1800,
+    "custom_thresholds": {},
+    "ignored_mounts": []
   }
 }

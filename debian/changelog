@@ -1,0 +1,20 @@
+disk-overview (0.2.0-1) unstable; urgency=medium
+
+  * Adicionado sistema de notificações para discos cheios
+  * Adicionado ícone na bandeja do sistema (tray icon)
+  * Opção de minimizar para tray ao fechar janela
+  * Thresholds configuráveis para alertas (warning/critical)
+  * Cooldown entre notificações do mesmo disco
+
+ -- Disk Overview Team <noreply@example.com>  Mon, 03 Feb 2026 12:00:00 -0300
+
+disk-overview (0.1.0-1) unstable; urgency=low
+
+  * Versão inicial
+  * Visualização de discos locais, removíveis e de rede
+  * Sidebar com pastas fixadas
+  * Barra de progresso com indicador de uso
+  * Abertura de pastas no gerenciador de arquivos
+  * Integração com terminal
+
+ -- Disk Overview Team <noreply@example.com>  Sun, 01 Jan 2026 12:00:00 -0300

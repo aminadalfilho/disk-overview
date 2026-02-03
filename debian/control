@@ -1,0 +1,29 @@
+Source: disk-overview
+Section: utils
+Priority: optional
+Maintainer: Disk Overview Team <noreply@example.com>
+Build-Depends: debhelper (>= 10),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Standards-Version: 4.5.1
+Homepage: https://github.com/aminadal/disk-overview
+
+Package: disk-overview
+Architecture: all
+Depends: ${python3:Depends},
+         ${misc:Depends},
+         python3-gi,
+         python3-psutil,
+         gir1.2-gtk-3.0,
+         gir1.2-glib-2.0
+Description: Storage device visualization and management tool
+ Disk Overview is a GTK3 application for visualizing and managing
+ storage devices on Linux systems.
+ .
+ Features:
+  - View local, removable and network disks
+  - Progress bars showing disk usage
+  - Pinned folders sidebar
+  - Desktop notifications for low disk space
+  - Open folders in file manager or terminal
