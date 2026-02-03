@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Disk Overview
+Comment=Visualizacao de dispositivos de armazenamento
+Exec=python3 -m disk_overview.main
+Icon=drive-harddisk
+Terminal=false
+Type=Application
+Categories=Utility;System;FileManager;
+Keywords=disk;storage;files;explorer;
+StartupNotify=true

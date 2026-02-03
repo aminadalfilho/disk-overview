@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "pinned_folders": [],
+  "refresh_interval_seconds": 30,
+  "open_command": "nautilus",
+  "terminal_command": "gnome-terminal",
+  "keyboard_shortcut": "Super+E",
+  "window": {
+    "width": 900,
+    "height": 600,
+    "remember_position": true,
+    "last_x": 100,
+    "last_y": 100,
+    "sidebar_width": 200
+  },
+  "appearance": {
+    "show_free_space_text": true,
+    "bar_color_normal": "#3584e4",
+    "bar_color_warning": "#ff7800",
+    "bar_color_critical": "#e01b24"
+  }
+}
