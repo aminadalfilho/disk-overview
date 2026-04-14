@@ -12,6 +12,7 @@ LOCAL_FSTYPES = {
     "btrfs",
     "xfs",
     "ntfs",
+    "ntfs3",
     "vfat",
     "exfat",
 }

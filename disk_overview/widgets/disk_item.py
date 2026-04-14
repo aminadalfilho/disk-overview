@@ -85,9 +85,12 @@ class DiskItem(Gtk.EventBox):
         self.progress.set_fraction(percent / 100.0)
         self._apply_usage_class(percent)
 
-        free = format_bytes(mount.get("free"))
-        total = format_bytes(mount.get("total"))
-        self.usage_label.set_text(f"{free} livres de {total}")
+        free_bytes = mount.get("free", 0)
+        total_bytes = mount.get("total", 0)
+        free = format_bytes(free_bytes)
+        total = format_bytes(total_bytes)
+        free_pct = (free_bytes / total_bytes * 100) if total_bytes > 0 else 0
+        self.usage_label.set_text(f"{free} livres ({free_pct:.0f}%) de {total}")
 
         self._set_icon(icon_for_type(mount.get("type")))
         self._update_os_badge(mount)

@@ -1,3 +1,15 @@
+disk-overview (0.2.0-3) unstable; urgency=medium
+
+  * Exibe percentual livre ao lado do espaço disponível
+
+ -- Disk Overview Team <noreply@example.com>  Tue, 14 Apr 2026 12:00:00 -0300
+
+disk-overview (0.2.0-2) unstable; urgency=medium
+
+  * Suporte a ntfs3 para discos NTFS montados com driver do kernel
+
+ -- Disk Overview Team <noreply@example.com>  Tue, 03 Feb 2026 12:40:00 -0300
+
 disk-overview (0.2.0-1) unstable; urgency=medium
 
   * Adicionado sistema de notificações para discos cheios
